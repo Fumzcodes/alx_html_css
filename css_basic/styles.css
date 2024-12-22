@@ -3,9 +3,10 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    background-color: aquamarine;
 }
 
-/* Style for header, main, and footer */
+
 header, footer {
     background-color: #333;
     color: white;
@@ -16,7 +17,7 @@ header, footer {
 main {
     display: flex;
     flex: 1;
-    flex-direction: row; /* Arrange article and aside horizontally */
+    flex-direction: row; 
 }
 
 article {
@@ -24,8 +25,14 @@ article {
     padding: 10px;
     background-color: #f4f4f9;
     overflow-y: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1)
 }
-
+article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
 aside {
     flex: 1;
     padding: 10px;
