@@ -1,41 +1,201 @@
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+/* General Reset */
+* {
     margin: 0;
-    background-color: aquamarine;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-header, footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-main {
-    display: flex;
-    flex: 1;
-    flex-direction: row; 
-}
-
-article {
-    flex: 2;
-    padding: 10px;
-    background-color: #f4f4f9;
-    overflow-y: auto;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1)
-}
-article p {
+/* Body Styling */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
     line-height: 1.6;
-    margin-bottom: 15px;
 }
-aside {
-    flex: 1;
-    padding: 10px;
-    background-color: #e9ecef;
-    overflow-y: auto;
+
+/* Header Styling */
+header {
+    background-color: transparent;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 2000; /* Increased z-index */
+    height: 60px;
+}
+
+/* Main Content Adjustment */
+main {
+    margin-top: 60px;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;  /* This ensures minimum height is full viewport */
+    height: auto;       /* Allows section to grow with content */
+    background-image: url("./css_advanced_img/Object.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px;  /* Added padding top and bottom */
+    display: flex;
+    flex-direction: column;  /* Stack content vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-content button:hover {
+    background-color: #0056b3;
+}
+/* Profile Cards Section */
+.pros-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+          position: relative;
+        z-index: 2;  /* Puts cards above the dark overlay */
+        width: 100%;
+        padding-top: 2rem;  /* Space after hero content */
+    
+}
+
+/* Individual Card Styling */
+.pro-card {
+    text-align: center;
+    color: white;
+}
+
+.pro-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+}
+
+.pro-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.pro-card p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .pros-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .pros-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pro-card img {
+        width: 120px;
+        height: 120px;
+    }
+}
+.quote{
+    background-color: plum;
+}
+.quote image{
+    
+        height: 40px;
+        width: auto;
+        object-fit: contain;
+       
+
+}
+.quote p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    text-align: center;
+}
+.quote blockquote{
+    text-align: center;
+    color: azure;
+    font-size: medium;
+    font-style: normal;
+    
 }
