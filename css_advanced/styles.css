@@ -176,26 +176,66 @@ nav ul li a:hover {
     }
 }
 .quote{
-    background-color: plum;
-}
-.quote image{
-    
-        height: 40px;
-        width: auto;
-        object-fit: contain;
-       
-
-}
-.quote p {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
-    font-style: italic;
+    background-color: #c170ff;
     text-align: center;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
+.quote-content {
+    display: flex; /* Enable horizontal alignment */
+    align-items: center; /* Vertically align items */
+    max-width: 1000px; /* Optional: Limit the container width */
+    margin: 0 auto; /* Center the container */
+    gap: 20px; /* Space between the image and text */
+}
+
+
+
 .quote blockquote{
     text-align: center;
     color: azure;
     font-size: medium;
     font-style: normal;
     
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center content */
+}
+
+.quote-text {
+    font-size: 1.5rem; /* Adjust font size */
+    font-style: italic; /* Italicize the quote */
+    color: #555; /* Neutral text color */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 20px; /* Spacing between quote and author */
+    position: relative; /* For quotation marks */
+}
+
+.quote-text::before,
+.quote-text::after {
+    content: "“"; /* Opening and closing quotation marks */
+    font-size: 2rem;
+    color: #ccc; /* Light color for quotes */
+    position: absolute;
+}
+
+.quote-text::before {
+    top: -10px;
+    left: -20px;
+}
+
+.quote-text::after {
+    bottom: -10px;
+    right: -20px;
+    content: "”"; /* Closing quotation mark */
+}
+
+@media (max-width: 768px) {
+    .quote-text {
+        font-size: 1.2rem; /* Adjust for smaller screens */
+    }
+
 }
