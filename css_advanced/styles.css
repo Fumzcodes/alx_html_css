@@ -206,12 +206,12 @@ nav ul li a:hover {
 }
 
 .quote-text {
-    font-size: 1.5rem; /* Adjust font size */
-    font-style: italic; /* Italicize the quote */
-    color: #555; /* Neutral text color */
-    line-height: 1.6; /* Improve readability */
-    margin-bottom: 20px; /* Spacing between quote and author */
-    position: relative; /* For quotation marks */
+    font-size: 1.5rem; 
+    font-style: italic; 
+    color: #555; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    position: relative; 
 }
 
 .quote-text::before,
@@ -395,4 +395,39 @@ nav ul li a:hover {
 
 .membership-content p {
     color: #f4f4f4;
+}
+.FAQ{
+    background-color: #fff;
+    padding: 20px; 
+    max-width: 1200px;  /* Added to contain width */
+    margin: 0 auto; 
+}
+.FAQ-header{
+    font-family: source sans pro;
+    font-size: medium;
+    text-align: center;
+    line-height: 75.42px;
+    size: 60px;
+
+}
+.FAQ-how{
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 40px;
+}
+.FAQ-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+}
+.FAQ-lorem{
+    font-family: sans pro;
+    font-weight: 400;
+    size: 14px;
+    line-height: 24px;
+    
 }
