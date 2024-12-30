@@ -361,4 +361,38 @@ nav ul li a:hover {
         grid-template-columns: 1fr;
     }
 }
+.membership {
+    text-align: center;
+    padding: 50px;
+    background-color: #071629;
+    margin: 30px auto;
+    max-width: 1200px;
+}
 
+.membership-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.membership-content {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+.membership-content img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.membership-content h3 {
+    color: #c170ff;
+    margin: 15px 0;
+}
+
+.membership-content p {
+    color: #f4f4f4;
+}
