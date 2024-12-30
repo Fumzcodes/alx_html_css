@@ -431,3 +431,21 @@ nav ul li a:hover {
     line-height: 24px;
     
 }
+.footer-content{
+    background-color: #071629;
+
+}
+.footer-logo{
+align-items: start;
+}
+.footer-logo{
+    text-align: left;
+}
+.social-icons{
+    text-align: right;
+    color: #f5f5f5;
+}
+.footer-content p{
+    text-align: center;
+    color: #f5f5f5;
+}
