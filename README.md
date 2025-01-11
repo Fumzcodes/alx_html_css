@@ -23,3 +23,9 @@ The project was created based on a Figma design file, ensuring fidelity to the o
 - A clean and modern layout.
 - Full responsiveness for desktop and mobile screens.
 - Interactive hover/active effects for buttons and links.
+Interactions Note
+The webpage switches to the mobile version when the screen width is 480px or less.
+Interactive elements:
+Links hover/active: #FF6565
+Button hover/active: opacity: 0.9
+The content is constrained to a maximum width of 1000px and centered on the page for better readability.
