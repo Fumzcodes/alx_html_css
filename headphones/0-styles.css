@@ -1,0 +1,106 @@
+
+header {
+    background-color: transparent;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 2000; /* Increased z-index */
+    height: 60px;
+    font color: white; 
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+    nav ul li a {
+        text-decoration: none;
+        color: #ffff;
+        font-size: 16px;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;  
+    height: auto;       
+    background-image: url("./images.css/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px;  
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+}
+.what{
+    text-align: center;
+    padding: 50px;
+    background-color: #ffff;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.what-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.what p{
+    text-align: center;
+    color: rgb(11, 12, 12);
+    font-size: medium;
+    font-style: normal;
+    background: #fff;
+    border-radius: 12px;
+  
+    
+}
+
+
+.what-content {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.what-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.what-card  h3 {
+    color: #0c0c0c;
+    margin: 15px 0;
+}
+
+.membership-content p {
+    color: #f4f4f4;
+}
+.Results{
+    text-align: center;
+    padding: 50px;
+    background-color: #ffff;
+    margin: 30px auto;
+    max-width: 1200px;   
+}
