@@ -1,0 +1,266 @@
+
+:root{
+    --coral-red: #FF6565;
+    --dark-blue: #071629;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  
+  html{
+    line-height: 1.5;
+  }
+  
+  body{
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .max-width{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .logo img{
+    width: 200px;
+  }
+  
+  /* Hero Section Start */
+  
+  #hero-section{
+    background: url(./images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+  }
+  
+  .menu-icon{
+    display: none;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.25s;
+  }
+  
+  header a:hover{
+    color: var(--coral-red);
+  }
+  
+  nav ul{
+   display: flex;
+   list-style: none;
+   gap: 20px;
+   font-size: 18px;
+   cursor: pointer;
+  }
+  
+  .hero-center{
+    max-width: 600px;
+    margin: 200px auto 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-center h1{
+    font-size: 25px;
+    margin-bottom: -15px;
+  }
+  
+  .hero-center p{
+    font-size: 14px;
+  }
+  
+   button{
+    border: none;
+    color: white;
+    background-color: var(--coral-red);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+   button:hover{
+    opacity: 0.9;
+  }
+  
+  /* Hero Section End */
+  
+  /*  */
+  
+  #part-2{
+    padding: 100px;
+  }
+  
+  .brief{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+  }
+  
+  .card{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    transition: transform 0.25s ease, border 0.25s ease;
+  }
+  
+  .card p{
+    text-align: center;
+  }
+  
+  .card svg{
+    width: 60px;
+    fill: var(--coral-red);
+  }
+  
+  /* */
+  
+  /*  */
+  #part-3{
+    background: url(./images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 150px 0 80px;
+  }
+  
+  .shape{
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-color: var(--coral-red);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+    transition: transform 0.25s ease;
+  }
+  
+  .shape:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 1px solid var(--coral-red);
+    border-radius: 10px;
+  }
+  
+  .percentage{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  /*  */
+  
+  #part-4{
+    padding: 100px 0 50px;
+  }
+  
+  .contact{
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  hr{
+    margin-bottom: 50px;
+    color: grey;
+  }
+  
+  .contact button{
+   align-self: center;
+  }
+  
+  /*  */
+  
+  footer{
+    background-color: var(--dark-blue);
+    padding: 60px 0  30px;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer svg{
+    width: 30px;
+    fill: white;
+  }
+  
+  .social-icons{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .copyright{
+    color: grey;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width:600px){
+    nav{
+      display: none;
+    }
+    .menu-icon{
+      display: block;
+      width: 50px;
+      fill: white;
+      cursor: pointer;
+    }
+  
+    .card-container{
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .container{
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    #part-2{
+      padding: 20px;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .card-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      justify-items: center;
+    }
+    #part-2{
+      
+    }
+  }

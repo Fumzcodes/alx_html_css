@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile School</title>
+    <link rel="stylesheet" href="./0-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="logo-link">
+                <img src="./images.css/logo_headphones.png" alt="Smile School Logo" class="logo">
+            </a>
+            
+            <nav class="main-navigation">
+                <button class="mobile-nav-toggle">
+                    <span class="sr-only">Toggle Menu</span>
+                    <span class="hamburger-icon">☰</span>
+                </button>
+                
+                <ul id="main-menu" class="nav-menu">
+                    <li><a href="#what-we-do">What We Do</a></li>
+                    <li><a href="#our-results">Our Results</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Potential</h1>
+                <p class="hero-subtitle">Unlock your skills with our comprehensive learning program</p>
+                <button class="btn btn-primary">
+                    Register for Free
+                    <span class="sr-only">Start your learning journey today</span>
+                </button>
+                
+                <div class="hero-description">
+                    <p>Discover a world of opportunities through our innovative learning approach. We're committed to helping you reach your full potential.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="what-we-do" class="services">
+            <div class="container">
+                <h2>What We Do</h2>
+                <p class="section-description">Our comprehensive approach covers multiple dimensions of skill development.</p>
+                
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./images.css/sound-frecuency.png" alt="Sound Frequency Icon">
+                        </div>
+                        <h3>Sound Frequency Analysis</h3>
+                        <p>Advanced techniques to understand and improve audio perception.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./images.css/video figma.png" alt="Video Learning Icon">
+                        </div>
+                        <h3>Video Learning</h3>
+                        <p>Engaging video content designed to enhance learning experience.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./images.css/music figma.png" alt="Music Integration Icon">
+                        </div>
+                        <h3>Music Integration</h3>
+                        <p>Innovative music-based learning techniques.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./images.css/hearing figma.png" alt="Hearing Enhancement Icon">
+                        </div>
+                        <h3>Hearing Enhancement</h3>
+                        <p>Specialized programs to improve auditory skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-results" class="results">
+            <div class="container">
+                <h2>Our Results Speak for Themselves</h2>
+                <blockquote class="testimonial">
+                    "The transformative learning experience has exceeded all my expectations. Their innovative approach truly makes a difference."
+                </blockquote>
+                
+                <div class="results-grid">
+                    <div class="result-card">
+                        <img src="./images.css/pentagone.png" alt="Student Satisfaction" class="result-icon">
+                        <div class="result-details">
+                            <span class="result-value">95%</span>
+                            <p>Student Satisfaction</p>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <img src="./images.css/pentagone.png" alt="Success Stories" class="result-icon">
+                        <div class="result-details">
+                            <span class="result-value">80+</span>
+                            <p>Success Stories</p>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <img src="./images.css/pentagone.png" alt="Years of Experience" class="result-icon">
+                        <div class="result-details">
+                            <span class="result-value">5+</span>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <img src="./images.css/pentagone.png" alt="Global Reach" class="result-icon">
+                        <div class="result-details">
+                            <span class="result-value">1000+</span>
+                            <p>Learners Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form action="/submit-contact" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" 
+                               placeholder="Enter your full name" 
+                               required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" 
+                               placeholder="Enter your email" 
+                               required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" 
+                                  rows="5" 
+                                  placeholder="Write your message here" 
+                                  required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./images.css/logo_headphones.png" alt="Smile School Logo">
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </div>
+            
+            <p class="copyright">&copy; 2024 Smile School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('main-menu');
+            menu.classList.toggle('is-open');
+        });
+    </script>
+</body>
+</html>
