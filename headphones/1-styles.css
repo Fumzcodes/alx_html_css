@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .max-width{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .logo img{
+    width: 200px;
+  }
+  
+  /* Hero Section Start */
+  
+  #hero-section{
+    background: url(./images.css/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+  }
+  
+  .menu-icon{
+    display: none;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.25s;
+  }
+  
+  header a:hover{
+    color: var(--coral-red);
+  }
+  
+  nav ul{
+   display: flex;
+   list-style: none;
+   gap: 20px;
+   font-size: 18px;
+   cursor: pointer;
+  }
+  
+  .hero-center{
+    max-width: 600px;
+    margin: 200px auto 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-center h1{
+    font-size: 25px;
+    margin-bottom: -15px;
+  }
+  
+  .hero-center p{
+    font-size: 14px;
+  }
+  
+   button{
+    border: none;
+    color: white;
+    background-color: var(--coral-red);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+   button:hover{
+    opacity: 0.9;
+  }
+  
+  
+  
+  .what-we-do{
+    text-align: center;
+    padding: 50px;
+    background-color: #ffff;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+  .brief{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .What-tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+.what-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.what p{
+    text-align: center;
+    color: rgb(11, 12, 12);
+    font-size: medium;
+    font-style: normal;
+    background: #fff;
+    border-radius: 12px;
+  
+    
+}
+
+
+.what-content {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.what-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.what-card  h3 {
+    color: #0c0c0c;
+    margin: 15px 0;
+  .card{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    transition: transform 0.25s ease, border 0.25s ease;
+  }
+  
+  .card p{
+    text-align: center;
+  }
+  
+  .card svg{
+    width: 60px;
+    fill: var(--coral-red);
+  }
+}
